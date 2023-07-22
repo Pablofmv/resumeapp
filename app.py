@@ -55,7 +55,8 @@ def handle_userinput(user_question):
 			st.write(bot_template.replace("{{MSG}}",message.content), unsafe_allow_html=True)
 
 def main():
-	load_dotenv()
+	OPENAI_API_KEY = "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"
+	HUGGINGFACEHUB_API_TOKEN = "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"
 	st.set_page_config(page_title='Chat with multiple PDFS', page_icon=":books:")
 	st.write(css, unsafe_allow_html=True)
 
